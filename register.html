@@ -1,0 +1,110 @@
+<!--
+@student name: Trieu Hoang Nguyen
+@student id: 100031534
+@main function: an html file with a register form that allows users enter inputs
+* and register for their service credentials
+-->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Customer Registration</title>
+		<meta charset="utf-8" />
+		<meta name="Viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+		<script type="text/javascript" src="register.js"></script>
+	</head>
+	<body>
+		<div class="container">
+		<header class="row">
+			<div class="col-md-12">
+				<h1>Customer Registration</h1>
+			</div>
+		</header>
+		<div class="row">
+			<div class="col-md-12">
+				<br>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<form novalidate="novalidate" id="registerForm">
+					<div class="form-group row">
+						<label class="col-md-2 col-form-label" for="email">Email address:</label>
+						<div class="col-md-6">
+							<input type="email" class="form-control" id="email">
+						</div>
+						<div class="col-md-4">
+							<span class="text-danger" id="emailErr">*</span>
+						</div>
+					</div>
+					<div class="form-group row">
+						<label class="col-md-2 col-form-label" for="fname">First name:</label>
+						<div class="col-md-6">
+							<input type="text" class="form-control" id="fname">
+						</div>
+						<div class="col-md-4">
+							<span class="text-danger" id="fnameErr">*</span>
+						</div>
+					</div>
+					<div class="form-group row">
+						<label class="col-md-2 col-form-label" for="lname">Last name:</label>
+						<div class="col-md-6">
+							<input type="text" class="form-control" id="lname">
+						</div>
+						<div class="col-md-4">
+							<span class="text-danger" id="lnameErr">*</span>
+						</div>
+					</div>
+					<div class="form-group row">
+						<label class="col-md-2 col-form-label" for="pword">Password:</label>
+						<div class="col-md-6">
+							<input type="password" class="form-control" id="pword">
+						</div>
+						<div class="col-md-4">
+							<span class="text-danger" id="pwordErr">*</span>
+						</div>
+					</div>
+					<div class="form-group row">
+						<label class="col-md-2 col-form-label" for="cpword">Confirm password:</label>
+						<div class="col-md-6">
+							<input type="password" class="form-control" id="cpword">
+						</div>
+						<div class="col-md-4">
+							<span class="text-danger" id="cpwordErr">*</span>
+						</div>
+					</div>
+					<div class="form-group row">
+						<label class="col-md-2 col-form-label" for="phone">Contact phone:</label>
+						<div class="col-md-6">
+							<input type="text" class="form-control" id="phone" maxlength="12" placeholder="(0d)dddddddd or 0d dddddddd">
+						</div>
+						<div class="col-md-4">
+							<span class="text-danger" id="phoneErr"></span>
+						</div>
+					</div>
+					<div class="form-group row">
+						<div class="col-md-2 col-md-offset-10">
+							<button type="button" class="btn btn-primary" onclick="SendRequest()">Register</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<p><span class="text-danger">* </span>fields are required.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<p><span class="text-success" id="completeRegister"></span></p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<a href="buyonline.html">Go back to Buy Online</a>
+			</div>
+		</div>
+		</div>
+	</body>
+</html>

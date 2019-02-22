@@ -1,0 +1,87 @@
+<!--
+@student name: Trieu Hoang Nguyen
+@student id: 100031534
+@main function: display a form that allows manager to add an item to the database (an xml file in this case)
+-->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Add Item</title>
+		<meta charset="utf-8" />
+		<meta name="Viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+		<script type="text/javascript" src="listing.js"></script>
+	</head>
+	<body>
+		<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<br>
+			</div>
+		</div>
+		<header class="row">
+			<div class="col-md-4">
+				<a href="listing.html">Listing</a>
+			</div>
+			<div class="col-md-4">
+				<a href="processing.html">Processing</a>
+			</div>
+			<div class="col-md-4">
+				<a href="logout.html">Log out</a>
+			</div>
+		</header>
+		<div class="row">
+			<div class="col-md-12">
+				<hr>
+				<h2>Add new item</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-8 col-md-offset-4">
+				<table class="table table-bordered table-hover table-responsive">
+					<tr>
+						<td>Item name:</td>
+						<td class="border-right-0"><input type="text" id="itemName" size="30"></td>
+						<td class="border-left-0"><span class="text-danger" id="itemNameErr">*</span></td>
+					</tr>
+					<tr>
+						<td>Item price:</td>
+						<td class="border-right-0"><input type="text" id="itemPrice" size="30"></td>
+						<td class="border-left-0"><span class="text-danger" id="itemPriceErr">*</span></td>
+					</tr>
+					<tr>
+						<td>Item quantity:</td>
+						<td class="border-right-0"><input type="text" id="itemQty" size="30"></td>
+						<td class="border-left-0"><span class="text-danger" id="itemQtyErr">*</span></td>
+					</tr>
+					<tr>
+						<td>Item description:</td>
+						<td class="border-right-0"><textarea id="itemDesc" rows="3" cols="28" maxlength="150"></textarea></td>
+						<td class="border-left-0"><span class="text-danger" id="itemDescErr">*</span></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-1">
+				<button type="button" class="btn btn-primary" onclick="SendRequest()" id="addBtn">Add Item</button>
+			</div>
+			<div class="col-md-1 col-md-offset-10">
+				<button type="button" class="btn btn-default" onclick="Reset()" id="resetBtn">Reset All</button>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<br>
+				<span id="successMsg" class="text-success"></span>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<br>
+				<a href="buyonline.html">Go back to Buy Online</a>
+			</div>
+		</div>
+		</div>
+	</body>
+</html>

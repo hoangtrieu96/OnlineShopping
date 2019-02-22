@@ -1,0 +1,95 @@
+<!--
+@student name: Trieu Hoang Nguyen
+@student id: 100031534
+@main function: two main functions
+* function 1: display a list of items for sale (available quantity > 0)
+* function 2: create a shopping cart and allow users to perform purchase
+-->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Buying</title>
+		<meta charset="utf-8" />
+		<meta name="Viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+		<script type="text/javascript" src="buying.js"></script>
+	</head>
+	<body>
+		<div class="container">
+		<header class="row">
+			<div class="col-md-12">
+				<h1>Buying</h1>
+				<br>
+			</div>
+		</header>
+		<div class="row">
+			<div class="col-md-12">
+				<br>
+				<a href="clogout.html">Log out</a>
+				<hr><br>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<h2>Shopping Catalog</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12" id="itemList">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<h2>Shopping Cart</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<table class="table table-bordered table-responsive">
+					<thead>
+						<tr class="table-info">
+							<td>Item Number</td>
+							<td>Name</td>
+							<td>Price</td>
+							<td>Quantity</td>
+							<td>Remove</td>
+						</tr>
+					</thead>
+					<tbody id="itemCart">
+					</tbody>
+					<tfoot>
+						<tr class="table-active">
+							<td>Total: </td>
+							<td class="border-right-0">$<span id="total">0</span></td>
+							<td class="border-left-0 border-right-0"></td>
+							<td class="border-left-0 border-right-0"></td>
+							<td class="border-left-0"></td>
+						</tr>
+					</tfoot>
+				</table>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-2">
+				<button type="button" class="btn btn-primary" onclick="PurchaseAction('confirm')">Confirm Purchase</button>
+			</div>
+			<div class="col-md-2 col-md-offset-8">
+				<button type="button" class="btn btn-default" onclick="PurchaseAction('cancel')">Cancel Purchase</button>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<br>
+				<span class="text-success" id="finalPurchaseMsg"></span>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<br>
+				<a href="buyonline.html">Go back to Buy Online</a>
+				<br>
+			</div>
+		</div>
+		</div>
+	</body>
+</html>

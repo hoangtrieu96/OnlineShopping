@@ -1,0 +1,61 @@
+<!--
+@student name: Trieu Hoang Nguyen
+@student id: 100031534
+@main function: display a list of non-zero sold quantity items for manager processing
+-->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Item Processing</title>
+		<meta charset="utf-8" />
+		<meta name="Viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+		<script type="text/javascript" src="processing.js"></script>
+	</head>
+	<body>
+		<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<br>
+			</div>
+		</div>
+		<header class="row">
+			<div class="col-md-4">
+				<a href="listing.html">Listing</a>
+			</div>
+			<div class="col-md-4">
+				<a href="processing.html">Processing</a>
+			</div>
+			<div class="col-md-4">
+				<a href="logout.html">Log out</a>
+			</div>
+		</header>
+		<div class="row">
+			<div class="col-md-12">
+				<hr>
+				<h2>Processing Form</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12" id="itemList">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<button type="button" class="btn btn-primary" onclick="SendRequest2()">Process</button>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<span id="successMsg"></span>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<br>
+				<a href="buyonline.html">Go back to Buy Online</a>
+			</div>
+		</div>
+		</div>
+	</body>
+</html>

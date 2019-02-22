@@ -1,0 +1,78 @@
+<!--
+@student name: Trieu Hoang Nguyen
+@student id: 100031534
+@main function: display a form with username and password for managers to login into the system
+-->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Manager Login</title>
+		<meta charset="utf-8" />
+		<meta name="Viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+		<script type="text/javascript" src="mlogin.js"></script>
+		<script type="text/javascript" src="mloginCheck.js"></script>
+	</head>
+	<body>
+		<div class="container">
+		<header class="row">
+			<div class="col-md-12">
+				<h1>Manager Login</h1>
+			</div>
+		</header>
+		<div class="row">
+			<div class="col-md-12">
+				<br>
+			</div>
+		</div>
+		<div class="row" id="loginBlock">
+			<div class="col-md-12">
+				<form novalidate="novalidate">
+					<div class="form-group row">
+						<label class="col-md-2 col-form-label" for="username">Username:</label>
+						<div class="col-md-6">
+							<input type="text" class="form-control" id="username">
+						</div>
+						<div class="col-md-4">
+							<span class="text-danger" id="usernameErr"></span>
+						</div>
+					</div>
+					<div class="form-group row">
+						<label class="col-md-2 col-form-label" for="pword">Password:</label>
+						<div class="col-md-6 col">
+							<input type="password" class="form-control" id="pword">
+						</div>
+						<div class="col-md-4">
+							<span class="text-danger" id="pwordErr"></span>
+						</div>
+					</div>
+					<div class="form-group row">
+						<div class="col-md-2 col-md-offset-10">
+							<button type="button" class="btn btn-primary" onclick="SendRequest()">Login</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<p><span class="text-danger" id="errMsg"></span></p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3" id="feature1">
+			</div>
+			<div class="col-md-3" id="feature2">
+			</div>
+			<div class="col-md-3 col-md-offset-3" id="feature3">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<br>
+				<a href="buyonline.html">Go back to Buy Online</a>
+			</div>
+		</div>
+		</div>
+	</body>
+</html>

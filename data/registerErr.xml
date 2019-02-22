@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<Error>
+	<email></email>
+	<fname></fname>
+	<lname></lname>
+	<pword></pword>
+	<cpword></cpword>
+	<phone></phone>
+	<complete></complete>
+</Error>
